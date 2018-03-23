@@ -1519,7 +1519,19 @@ blockquote p {
     margin-left: 10px;
     border-left-color: hsl(0, 0%, 86%);
 }
+/* JONJ */
+.messagebox blockquote.error {
+    border-left-color: hsl(0, 100%, 50%);
+}
 
+.messagebox blockquote.warning {
+    border-left-color: hsl(35, 77%, 47%);
+}
+
+.messagebox blockquote.info {
+    border-left-color: hsl(107, 100%, 50%);
+}
+/* JONJ */
 .bookend {
     margin-top: 10px;
     background-color: transparent;
