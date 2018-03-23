@@ -241,17 +241,17 @@
             if (cap = this.rules.blockquote.exec(src)) {
                 src = src.substring(cap[0].length);
                 // JONJ
-                if (cap[0].indexOf('>>>>')) {
+                if (cap[0].indexOf('>>>>') > -1) {
                     this.tokens.push({
                         type: 'blockquote_error_start'
                     });
                     cap = cap[0].replace(/^ *>>>> ?/gm, '');
-                } else if (cap[0].indexOf('>>>')) {
+                } else if (cap[0].indexOf('>>>') > -1) {
                     this.tokens.push({
                         type: 'blockquote_warning_start'
                     });
                     cap = cap[0].replace(/^ *>>> ?/gm, '');
-                } else if (cap[0].indexOf('>>')) {
+                } else if (cap[0].indexOf('>>') > -1) {
                     this.tokens.push({
                         type: 'blockquote_info_start'
                     });
